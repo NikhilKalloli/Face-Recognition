@@ -40,7 +40,6 @@ mtcnn==0.1.1
 networkx==3.2.1
 numpy==1.26.3
 oauthlib==3.2.2
-opencv-python==4.9.0.80
 opt-einsum==3.3.0
 packaging==23.2
 pandas==2.2.0
