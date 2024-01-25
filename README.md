@@ -24,7 +24,7 @@ This is a Streamlit web application for face recognition using a pre-trained YOL
    ```
 2. Navigate to the directory:
     ```
-    cd face-recognition-app
+    cd Face-Recognition
     ```
 
 3. Install the required dependencies:
@@ -50,5 +50,20 @@ To be able to recognise any face you want to all you need is a few photos of tha
 ## Deployment
 I would advise to deploy it on [Streamlit](https://share.streamlit.io/) since the libraries are larger in size other services will run out of memory while building the application. Make sure you include `packages.txt` consisting of  `libgl1-mesa-glx` library.
 
+## Contributing
 
+Contributions are welcome! If you have any improvements or new features to suggest, please create a pull request.
+
+If you have any questions or issues, feel free to [open an issue](https://github.com/NikhilKalloli/Face-Recognition/issues).
+
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+
+## Connect with Me
+
+[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/NikhilKalloli)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/nikhil-kalloli-a6ab2a25b/)
    
