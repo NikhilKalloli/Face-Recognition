@@ -48,7 +48,7 @@ This is a Streamlit web application for face recognition using a pre-trained YOL
 To be able to recognise any face you want to all you need is a few photos of that person and follow the documentation [here](https://github.com/NikhilKalloli/Face-Recognition/blob/main/Custom.md).
 
 ## Deployment
-I would advise to deploy it on [Streamlit](https://share.streamlit.io/) since the libraries are larger in size other services will run out of memory while building the application. Make sure you include `packages.txt` consisting of  `libgl1-mesa-glx` library.
+I would advise to deploy it on [Streamlit](https://share.streamlit.io/) since the libraries are larger in size and other deployment services will run out of memory while building the application. Make sure you include `packages.txt` consisting of  `libgl1-mesa-glx` library.
 
 ## Acknowledgement
 This repository is the deployed and simplified version of [this](https://github.com/sOR-o/Face-Recognition).
