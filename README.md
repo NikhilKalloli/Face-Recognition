@@ -2,6 +2,12 @@
 
 This is a Streamlit web application for face recognition using a pre-trained YOLO (You Only Look Once) model and the DeepFace library. The app allows users to upload an image, detects faces, and performs face recognition to identify known faces.
 
+## Quick Overview of Working
+- Detectation of faces in images using YOLO.
+- Crop and save the detected faces.
+- Recognize faces using DeepFace and categorize them based on a pre-trained model.
+- Do whatever you feel like from the features extracted.
+
 ## Features
 
 - **Face Detection**: The app uses the YOLO model to detect faces in uploaded images.
@@ -39,5 +45,7 @@ This is a Streamlit web application for face recognition using a pre-trained YOL
  - [Joe Biden](https://en.wikipedia.org/wiki/Joe_Biden)
  - [Ajay Banga](https://en.wikipedia.org/wiki/Ajay_Banga)
  - [Lula da Silva](https://en.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva)
- - [Cyril Ramaphosa](https://en.wikipedia.org/wiki/Cyril_Ramaphosa)
+ - [Cyril Ramaphosa](https://en.wikipedia.org/wiki/Cyril_Ramaphosa)    
    To be able to recognise any face you want to all you need is a few photos of that person and follow the documentation here.
+
+   
