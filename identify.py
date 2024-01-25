@@ -7,8 +7,6 @@ from PIL import Image
 import shutil
 import os
 
-
-
 totalKnownFaces=0
 totalUnknownFaces=0
 knownNames =[]
@@ -57,7 +55,7 @@ def faceRecognition(input_image):
     
     # Iterate through the image files in the directory
     for filename in os.listdir(cropped_objects_dir):
-        if filename.endswith(".jpg"):
+        if filename.lower().endswith((".jpg", ".jpeg", ".png")):
             img_path = os.path.join(cropped_objects_dir, filename)
             model = DeepFace.find(img_path=img_path, db_path="database", enforce_detection=False, model_name="Facenet512")
 
@@ -67,7 +65,6 @@ def faceRecognition(input_image):
                 name = model[0]['identity'][0].split('/')[1]
                 
                 # Save the known face into the 'known' folder
-                # known_faces_path = os.path.join(known_faces_dir, f"{len(extracted_names) + 1}_{name}.jpg")
                 known_faces_path = os.path.join(known_faces_dir, f"{name}.jpg")
                 totalKnownFaces+=1
                 knownNames.append(name)
@@ -133,14 +130,7 @@ def faceExtraction(input_image, model, results):
 
 
 
-
-# def faceDetection(input_image):
-    # model = YOLO('best.pt')
-    # results: Results = model.predict(input_image)[0]
-    # return faceExtraction(input_image, model, results)
-
 def faceDetection(uploaded_file):
-    # Convert the uploaded image to a format supported by Ultralytics (e.g., PNG)
     img = Image.open(uploaded_file)
     temp_image_path = "./temp_image.jpg"  # Temporary path to store the converted image
     img.save(temp_image_path, format="JPEG")
@@ -149,20 +139,9 @@ def faceDetection(uploaded_file):
     model = YOLO('best.pt')
     results: Results = model.predict(temp_image_path)[0]
 
-    # Continue with the rest of your code...
     total_faces = faceExtraction(temp_image_path, model, results)
     
     # Remove the temporary image file
     os.remove(temp_image_path)
 
     return total_faces
-
-
-
-
-
-
-# image = input("enter image path : ")
-# faceDetection(image)
-# names = faceRecognition(image)
-# print(names)
