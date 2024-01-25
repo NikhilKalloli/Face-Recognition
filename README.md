@@ -50,6 +50,9 @@ To be able to recognise any face you want to all you need is a few photos of tha
 ## Deployment
 I would advise to deploy it on [Streamlit](https://share.streamlit.io/) since the libraries are larger in size other services will run out of memory while building the application. Make sure you include `packages.txt` consisting of  `libgl1-mesa-glx` library.
 
+## Acknowlwdwgement
+This reporistory is the deployed and simplified version of [this](https://github.com/sOR-o/Face-Recognition).
+
 ## Contributing
 
 Contributions are welcome! If you have any improvements or new features to suggest, please create a pull request.
