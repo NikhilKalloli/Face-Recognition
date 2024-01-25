@@ -45,7 +45,10 @@ This is a Streamlit web application for face recognition using a pre-trained YOL
  - [Lula da Silva](https://en.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva)
  - [Cyril Ramaphosa](https://en.wikipedia.org/wiki/Cyril_Ramaphosa)   
       
-   To be able to recognise any face you want to all you need is a few photos of that person and follow the documentation here.
-   
+To be able to recognise any face you want to all you need is a few photos of that person and follow the documentation here.
+
+## Deployment
+I would advise to deploy it on [Streamlit](https://share.streamlit.io/) since the libraries are larger in size other services will run out of memory while building the application. Make sure you include `packages.txt` consisting of  `libgl1-mesa-glx` library.
+
 
    
