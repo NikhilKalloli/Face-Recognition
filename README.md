@@ -32,3 +32,11 @@ This is a Streamlit web application for face recognition using a pre-trained YOL
     ``` 
     streamlit run streamlit_app.py
     ```
+
+## Customization
+ Currently the model is trained on the following World leaders:
+ - [Narendra Modi](https://en.wikipedia.org/wiki/Narendra_Modi)
+ - [Joe Biden](https://en.wikipedia.org/wiki/Joe_Biden)
+ - [Ajay Banga](https://en.wikipedia.org/wiki/Ajay_Banga)
+ - [Lula da Silva](https://en.wikipedia.org/wiki/Luiz_In%C3%A1cio_Lula_da_Silva)
+ - [Cyril Ramaphosa](https://en.wikipedia.org/wiki/Cyril_Ramaphosa)
